@@ -1,10 +1,10 @@
 import './index.scss';
-import Sidebar from '../Sidebar/Index.jsx';
+import Navbar from '../Navbar/Index.jsx';
 
 export default function Layout() {
   return (
     <>
-      <Sidebar />
+      <Navbar />
     </>
   )
 }
