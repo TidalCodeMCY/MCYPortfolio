@@ -1,6 +1,6 @@
 .nav-bar {
     background: #181818;
-    width: 60px;
+    width: 80px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -14,11 +14,11 @@
         img {
             display: block;
             margin: 8px auto;
-            width: 50px;
+            width: 70px;
             height: auto;
 
             &.sub-logo {
-                width: 50px;
+                width: 65px;
             }
         }
     }
@@ -72,20 +72,20 @@
 
             &:first-child {
                 &::after {
-                    content: 'HOME';
+                    content: 'HOMEPAGE';
                 }
             }
         }
 
         a.about-link {
             &::after {
-                content: 'ABOUT';
+                content: 'ABOUT ME';
             }
         }
 
         a.contact-link {
             &::after {
-                content: 'CONTACT';
+                content: 'CONTACT ME';
             }
         }
 
