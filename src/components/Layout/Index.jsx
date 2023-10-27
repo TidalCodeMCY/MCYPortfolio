@@ -10,7 +10,7 @@ export default function Layout() {
         <span className='tags top-tags'>
           &lt;body&gt;
           <br />
-          <span className='bottom-tag-html'>&lt;/html&gt;</span>
+          <span className='script-tag-html'>&lt;/html&gt;</span>
           </span>
 
         <Outlet />
@@ -18,7 +18,7 @@ export default function Layout() {
         <span className='tags bottom-tags'>
           &lt;/link&gt;
           <br />
-          <span className='script-tag-html'>&lt;/script&gt;</span>
+          <span className='bottom-tag-html'>&lt;/script&gt;</span>
         </span>
       </div>
     </>

@@ -17,8 +17,17 @@
             width: 70px;
             height: auto;
 
+            &:hover {
+                width: 85px;
+                margin: -3.5px auto;
+            }
+
             &.sub-logo {
                 width: 65px;
+
+                &:hover {
+                    width: 75px;
+                }
             }
         }
     }
