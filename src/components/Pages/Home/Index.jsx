@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 import AnimatedLetters from '../../AnimatedLetters/Index.jsx'
 import { useEffect, useState } from 'react'
 import Logo from './Logo/Index.jsx'
+import LogoY from '../../../assets/images/mcy-logo-y.png'
 
 export default function Home() {
   const[letterClass, setLetterClass] = useState('text-animate');
-  const nameArray = ['a','s','o','n',' ','Y','a','t','e','s'];
+  const nameArray = ['a','s','o','n',' '];
+  const lastArray = ['a','t','e','s']
   const jobArray = ['a',' ','J','u','n','i','o','r',' ','W','e','b',' ','D','e','v','e','l','o','p','e','r','.']
 
   useEffect(() => {
@@ -32,6 +34,10 @@ export default function Home() {
             <AnimatedLetters letterClass={letterClass}
             strArray={nameArray}
             idx={15} />
+            <img src={LogoY} alt="Developer" className='imgsrc'/>
+            <AnimatedLetters letterClass={letterClass}
+            strArray={lastArray}
+            idx={20} />
             <br />
             <AnimatedLetters letterClass={letterClass}
             strArray={jobArray}
