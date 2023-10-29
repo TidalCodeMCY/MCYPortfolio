@@ -5,6 +5,7 @@ import AnimatedLetters from '../../AnimatedLetters/Index.jsx'
 import { useEffect, useState } from 'react'
 import Logo from './Logo/Index.jsx'
 import LogoY from '../../../assets/images/mcy-logo-y.png'
+import Loader from 'react-loaders'
 
 export default function Home() {
   const[letterClass, setLetterClass] = useState('text-animate');
@@ -19,7 +20,8 @@ export default function Home() {
   },[])
 
   return (
-    <div className='container home-page'>
+    <>
+      <div className='container home-page'>
         <div className='text-zone'>
             <h1>
               <span className={letterClass}>H</span>
@@ -47,6 +49,9 @@ export default function Home() {
             <Link to='./contact' className='flat-button'>Contact Me</Link>
         </div>
         <Logo />
-    </div>
+      </div>
+      <Loader type='pacman' />
+    </>
+    
   )
 }

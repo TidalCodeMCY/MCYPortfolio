@@ -12,19 +12,21 @@ export default function Layout() {
           &lt;html&gt;
           <br />
           <span className='script-tag-html'>
-            &lt;/link&gt;
+            &lt;link/&gt;
             <br />
-            <span className='tag-html-link'>&lt;/body&gt;</span>
+            <span className='tag-html-link'>&lt;body&gt;</span>
             </span>
           </span>
 
         <Outlet />
 
         <span className='tags bottom-tags'>
-          &lt;/script&gt;
+          <span className='bottom-tag'>&lt;script/&gt;</span>
+          <br />
+          <span className='tag-html-link'>&lt;/body&gt;</span>
           <br />
           <span className='bottom-tag-html'>&lt;/html&gt;</span>
-        </span>
+          </span>
       </div>
     </>
   )
