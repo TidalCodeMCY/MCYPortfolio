@@ -7,19 +7,19 @@ export default function About() {
 
   //These are the arrays that AnimatedLetters puts on the page change these to change the words
   const about = ['A','b','o','u','t','','M','e'];
-  const line1 = ['I`m','','a','','massive','','fan','','of','','web','','&','','app'
-  ,'','development','.','I','am','','willing','','to','','learn','','any','','technology']
-  const line2 = ['if','','it','','means','','I','','will','','be','','able','','to',''
-  ,'make','','vibrant','','and','','interesting','','websites','!','I','plan','','to']
-  const line3 = ['learn','','more','','about','','robotics','','as','','well','.','The',''
-  ,'next','','thing','','I','plan','','to','','learn','','is','','C#','','&','','Python','.',]
-  const line4 = ['If','','you','','would','','like','','to','','connect','','please',''
+  const line1 = ['','','','','I`m','','a','','massive','','fan','','of','','web','','&','','app'
+  ,'','development','.','I','am','','willing','','to','','learn','','any']
+  const line2 = ['technology','','if','','it','','means','','I','','will','','be','','able','','to',''
+  ,'make','','vibrant','','and','','interesting','','websites','!']
+  const line3 = ['I','plan','','to','','learn','','more','','about','','robotics','','as','','well','.','The',''
+  ,'next','','thing','','I','plan','','to','','learn','','is','','C#','','&',]
+  const line4 = ['Python','.','If','','you','','would','','like','','to','','connect','','please',''
   ,'contact','','me','.','I','','would','','love','','to','','connect','!']
 
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
-    },500)
+    },2500)
   },[])
 
   return (
@@ -38,23 +38,26 @@ export default function About() {
               strArray={line1}
               idx={40}
             />
-            <br />
+          </p>
+          <p>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={line2}
-              idx={70}
+              idx={80}
             />
-            <br />
+          </p>
+          <p>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={line3}
-              idx={100}
+              idx={120}
             />
-            <br />
+          </p>
+          <p>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={line4}
-              idx={133}
+              idx={160}
             />
           </p>
       </div>
