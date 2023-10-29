@@ -7,14 +7,25 @@ export default function About() {
 
   //These are the arrays that AnimatedLetters puts on the page change these to change the words
   const about = ['A','b','o','u','t','','M','e'];
+  //Paragraph One
   const line1 = ['','','','','I`m','','a','','massive','','fan','','of','','web','','&','','app'
   ,'','development','.','I','am','','willing','','to','','learn','','any']
-  const line2 = ['technology','','if','','it','','means','','I','','will','','be','','able','','to',''
+  const line2 = ['technology','','if','','it','','means','','I','will','','be','','able','','to',''
   ,'make','','vibrant','','and','','interesting','','websites','!']
   const line3 = ['I','plan','','to','','learn','','more','','about','','robotics','','as','','well','.','The',''
   ,'next','','thing','','I','plan','','to','','learn','','is','','C#','','&',]
   const line4 = ['Python','.','If','','you','','would','','like','','to','','connect','','please',''
-  ,'contact','','me','.','I','','would','','love','','to','','connect','!']
+  ,'contact','','me','.','I','would','','love','','to','','connect','!']
+//Paragraph Two
+  const line5 = ['','','','','I','am','','confident','','that','','I','can','','tackle','','any'
+  ,'','job','.','If','','you','','are','','looking','','to','','hire']
+  const line6 = ['someone','','to','','develop','','a','','site','','for','','you','','or','','your',''
+  ,'business','','please','','contact','','me','','asap','!']
+  const line7 = ['I','would','','love','','to','','be','','part','','of','','a','','team','.','If',''
+  ,'you','','need','','somone','','for','','web','','development','','I','am']
+  const line8 = ['your','','guy','!','Dont','','forget','','you','','can','','also','','find','','me',''
+  ,'on','','my','','discord','','feel','','free','','to','','join','','anytime','!']
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,7 +43,7 @@ export default function About() {
             idx={15}
             />
           </h1>
-          <p>
+          <p className='firstpara'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={line1}
@@ -53,11 +64,40 @@ export default function About() {
               idx={120}
             />
           </p>
-          <p>
+          <p className='lastpara'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={line4}
               idx={160}
+            />
+          </p>
+          <br />
+          <p className='firstpara'>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={line5}
+              idx={200}
+            />
+          </p>
+          <p>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={line6}
+              idx={240}
+            />
+          </p>
+          <p>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={line7}
+              idx={280}
+            />
+          </p>
+          <p className='lastparagraph'>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={line8}
+              idx={320}
             />
           </p>
       </div>

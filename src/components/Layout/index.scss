@@ -58,8 +58,8 @@
         max-height: 90%;
 
         h1 {
-            font-size: 53px;
-            font-family: 'Coolvetica';
+            font-size: 51px;
+            font-family: 'Multilly';
             color: #5fe1d5;
             font-weight: 400;
             margin-top: 0;
@@ -88,6 +88,12 @@
                 opacity: 0.6;
                 line-height: 22px;
             }
+
+            .text-animate-hover {
+                &:hover {
+                    color: #fff;
+                }
+            }
         }
 
         p {
@@ -98,21 +104,96 @@
             font-weight: 300;
             min-width: fit-content;
             animation: pulse 1s;
+            scale: 0;
+            opacity: 0;
 
             &:nth-of-type(1) {
                 animation-delay: 2.6s;
+                scale: 1;
+                opacity: 1;
             }
 
             &:nth-of-type(2) {
-                animation-delay: 2.8s;
+                animation-delay: 2.9s;
+                scale: 1;
+                opacity: 1;
             }
 
             &:nth-of-type(3) {
-                animation-delay: 3.0s;
+                animation-delay: 3.1s;
+                scale: 1;
+                opacity: 1;
             }
 
             &:nth-of-type(4) {
-                animation-delay: 3.2s;
+                animation-delay: 3.3s;
+                scale: 1;
+                opacity: 1;
+            }
+
+            &:nth-of-type(5) {
+                animation-delay: 3.5s;
+                scale: 1;
+                opacity: 1;
+            }
+
+            &:nth-of-type(6) {
+                animation-delay: 3.7s;
+                scale: 1;
+                opacity: 1;
+            }
+
+            &:nth-of-type(7) {
+                animation-delay: 3.9s;
+                scale: 1;
+                opacity: 1;
+            }
+
+            &:nth-of-type(8) {
+                animation-delay: 4.1s;
+                scale: 1;
+                opacity: 1;
+            }
+        }
+
+        .lastparagraph {
+            &::after {
+                content: '</p>';
+                color: #5fe1d5;
+                font-size: 18px;
+                font-family: 'La Belle Aurore';
+                position: relative;
+                right: -550px;
+                top: 10px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+        }
+
+        .lastpara {
+            &::after {
+                content: '</p>';
+                color: #5fe1d5;
+                font-size: 18px;
+                font-family: 'La Belle Aurore';
+                position: relative;
+                right: -630px;
+                opacity: 0.6;
+                line-height: 18px;
+            }
+        }
+
+        .firstpara {
+            &::before {
+                content: '<p>';
+                font-size: 18px;
+                font-family: 'La Belle Aurore';
+                position: absolute;
+                margin-top: -22px;
+                left: 20px;
+                opacity: 0.6;
+                line-height: 18px;
+                color: #5fe1d5;
             }
         }
     }
