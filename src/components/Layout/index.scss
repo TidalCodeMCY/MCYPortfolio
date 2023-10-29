@@ -7,6 +7,7 @@
 .top-tags {
     bottom: auto;
     top: 25px;
+    animation: fadeIn 5s;
 }
 
 .tags {
@@ -21,18 +22,22 @@
 
 .bottom-tag-html {
     margin-left: -10px;
+    animation: fadeIn 5s;
 }
 
 .script-tag-html {
     margin-left: 25px;
+    animation: fadeIn 5s;
 }
 
 .tag-html-link {
     margin-left: 10px;
+    animation: fadeIn 5s;
 }
 
 .bottom-tag {
     margin-left: 25px;
+    animation: fadeIn 5s;
 }
 
 .bottom-tags {
