@@ -17,6 +17,11 @@ $primary-color: #5fe1d5;
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Mistrully';
+  src: url('./assets/fonts/Mistrully.ttf') format('ttf');
+}
+
 input,
 textarea {
   font-family: 'Helvetica Neue';

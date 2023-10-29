@@ -1,5 +1,5 @@
 import './index.scss'
-import LogoTitle from '../../../assets/images/mcy-logo.png'
+import LogoTitle from '../../../assets/images/mcy-logo-m.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../../AnimatedLetters/Index.jsx'
 import { useEffect, useState } from 'react'
@@ -10,7 +10,7 @@ export default function Home() {
   const[letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['a','s','o','n',' '];
   const lastArray = ['a','t','e','s']
-  const jobArray = ['a',' ','J','u','n','i','o','r',' ','W','e','b',' ','D','e','v','e','l','o','p','e','r','.']
+  const jobArray = ['a',' ','W','e','b',' ','D','e','v','e','l','o','p','e','r','.']
 
   useEffect(() => {
     setTimeout(() => {

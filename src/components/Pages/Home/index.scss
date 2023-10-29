@@ -13,7 +13,7 @@
         color: #ffff;
         font-size: 53px;
         margin: 0;
-        font-family: 'Coolvetica';
+        font-family: 'Mistrully';
         font-weight: 400;
 
         &::before {
@@ -52,13 +52,18 @@
     }
 
     h2 {
-        color: #010101;
+        color: whitesmoke;
         margin-top: 20px;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 13px;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1s 1, 8s backwards;
+
+        &:hover {
+            color: #5fe1d5;
+            animation: bounceIn 1s;
+        }
     }
 
     .flat-button {
