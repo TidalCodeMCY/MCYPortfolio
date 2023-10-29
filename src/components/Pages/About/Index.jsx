@@ -3,6 +3,7 @@ import AnimatedLetters from '../../AnimatedLetters/Index.jsx'
 import { useState,useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faHtml5, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
 
 export default function About() {
   const[letterClass, setLetterClass] = useState('text-animate');
@@ -36,7 +37,8 @@ export default function About() {
   },[])
 
   return (
-    <div className='conatiner about-page'>
+    <>
+      <div className='conatiner about-page'>
       <div className='text-zone'>
           <h1>
             <AnimatedLetters
@@ -126,6 +128,9 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      <Loader type='pacman' />
+    </>
+    
   )
 }
