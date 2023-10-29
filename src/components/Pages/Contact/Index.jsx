@@ -1,10 +1,13 @@
 import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../../AnimatedLetters/Index.jsx'
-import { useState,useEffect } from 'react';
+import { useState,useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   const[letterClass, setLetterClass] = useState('text-animate');
+
+  const refForm = useRef();
 
   const contact = ['C','o','n','t','a','c','t','','M','e',];
   const line1 = ['I','am','','interested','','in','','freelance,','','start-up,','','or','','any','','other','','work','','involving','','web,','','application,']
@@ -17,6 +20,26 @@ export default function Contact() {
       setLetterClass('text-animate-hover done')
     },2800)
   },[])
+
+  function sendEmail(e) {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_Gmail',
+        'template_37kldqs',
+        refForm.current,
+        'KB10OfKYmqYYKqJpx'
+      )
+      .then(
+        () => {
+          alert('Message Sent Successfully!')
+        },
+        () => {
+          alert('Message Not Sent, Please Try Again!')
+        }
+      )
+  }
 
   return (
     <>
@@ -58,10 +81,10 @@ export default function Contact() {
               />
           </p>
           <div className='contact-form'> 
-            <form action="">
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li>
-                  <input type="text" name="name" placeholder='Name' required/>
+                  <input type="text" name="from_name" placeholder='Name' required/>
                 </li>
                 <li>
                   <input type="email" name="email" placeholder='Email' required/>
