@@ -32,7 +32,7 @@ export default function About() {
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
-    },3000)
+    },2800)
   },[])
 
   return (
