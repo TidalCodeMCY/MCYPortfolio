@@ -1,11 +1,11 @@
 .stage-cube-cont {
     width: 50%;
     height: 100%;
-    top: 0;
     padding-top: 18%;
     margin-left: 0;
     position: absolute;
     right: 0;
+    top: -80px;
     overflow: hidden;
 }
 
@@ -20,15 +20,39 @@
 
     div {
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border: 1px solid #ccc;
         background: rgba(255, 255, 255, 0.4);
-        font-size: 100px;
+        font-size: 125px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 20px 0px lightblue;
+        box-shadow: 0 0 60px 0px lightblue;
+    }
+
+    .face1 {
+        transform: translateZ(150px);
+    }
+
+    .face2 {
+        transform: rotateY(90deg) translateZ(150px);
+    }
+
+    .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+    }
+
+    .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
+    }
+
+    .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+    }
+
+    .face6 {
+        transform: rotateX(-90deg) translateZ(150px);
     }
 }
 
