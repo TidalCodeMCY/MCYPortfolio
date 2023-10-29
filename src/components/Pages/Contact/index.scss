@@ -1,0 +1,29 @@
+.beginningpara {
+    &::before {
+        content: '<p>';
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+        position: absolute;
+        margin-top: -22px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+        color: #5fe1d5;
+        animation: fadeIn 10s;
+    }
+}
+
+.finishedpara {
+    &::after {
+        content: '</p>';
+        color: #5fe1d5;
+        font-size: 18px;
+        font-family: 'La Belle Aurore';
+        position: relative;
+        top: 10px;
+        right: -50px;
+        opacity: 0.6;
+        line-height: 18px;
+        animation: fadeIn 10s;
+    }
+}

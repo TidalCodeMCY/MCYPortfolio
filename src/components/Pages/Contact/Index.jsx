@@ -8,9 +8,9 @@ export default function Contact() {
 
   const contact = ['C','o','n','t','a','c','t','','M','e',];
   const line1 = ['I','am','','interested','','in','','freelance,','','start-up,','','or','','any','','other','','work','','involving','','web,','','application,']
-  const line2 = ['or','','robotics','development','.','I','would','','love','','to','','be','','part','','of','','some','','larger','','projects','','if','','needed','.']
-  const line3 = ['If','','you','','may','','have','','more','','requests','','or','','questions','','please','','do','','not','','hesitate','','to','','let']
-  const line4 = ['me','','know','','using','','the','','form','','below','.','Have','','a','','wonderful','','day','!']
+  const line2 = ['or','','robotics','','development','.','I','would','','love','','to','','be','','part','','of','','some','','larger','','projects','','if','','needed','.']
+  const line3 = ['If','','you','','may','','have','','more','','requests','','or','','questions','','please','','do','','not','','hesitate','','to','','let','','me','','know']
+  const line4 = ['using','','the','','form','','below','.','Have','','a','','wonderful','','day','!']
 
   useEffect(() => {
     setTimeout(() => {
@@ -29,7 +29,7 @@ export default function Contact() {
                 idx={15}
               />
           </h1>
-          <p>
+          <p className='beginningpara'>
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={line1}
@@ -50,13 +50,34 @@ export default function Contact() {
                 idx={120}
               />
           </p>
-          <p>
+          <p className='finishedpara'>
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={line4}
                 idx={160}
               />
           </p>
+          <div className='contact-form'> 
+            <form action="">
+              <ul>
+                <li>
+                  <input type="text" name="name" placeholder='Name' required/>
+                </li>
+                <li>
+                  <input type="email" name="email" placeholder='Email' required/>
+                </li>
+                <li>
+                  <input placeholder='Subject' type='text' name='subject' required/>
+                </li>
+                <li>
+                  <textarea placeholder='Message' name='message' required></textarea>
+                </li>
+                <li>
+                  <input type='submit' className='flat-button' value='Send'></input>
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
       </div>
       <Loader type='pacman' />
